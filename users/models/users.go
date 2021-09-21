@@ -1,5 +1,7 @@
 package models
 
+import "github.com/golang-jwt/jwt/v4"
+
 // All users must have a username and a password.
 type User struct {
 	Username string `json:"username"`
@@ -12,4 +14,5 @@ type User struct {
 // the library that we are going to use.
 type Claim struct {
 	Username string `json:"username"`
+	jwt.StandardClaims
 }
