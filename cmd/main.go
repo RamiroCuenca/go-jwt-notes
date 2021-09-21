@@ -1,10 +1,19 @@
 package main
 
 import (
+	"log"
+
+	"github.com/RamiroCuenca/go-rest-notesApi/auth"
 	"github.com/RamiroCuenca/go-rest-notesApi/common/logger"
 )
 
 func main() {
+	// Parse the certificates/keys
+	err := auth.LoadCertificates("./../certificates/app.rsa", "./../certificates/app.rsa.pub")
+	if err != nil {
+		log.Fatalf("Could not load the certificates/keys. Error: %v", err)
+	}
+
 	// Init Zap logger so that we can use it all over the app
 	logger.InitZapLogger()
 
