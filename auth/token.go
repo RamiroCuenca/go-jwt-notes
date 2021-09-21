@@ -1,6 +1,7 @@
 package auth
 
 import (
+	"errors"
 	"time"
 
 	"github.com/RamiroCuenca/go-rest-notesApi/users/models"
@@ -29,4 +30,35 @@ func GenerateToken(data models.User) (string, error) {
 
 	// Return the generated token
 	return signedToken, nil
+}
+
+// Validate the JWT.
+// Returns the claim so that we can access the information of the user.
+//
+// Before, we need to create a function wich return as the information of
+// our public key (Already parsed, it is declared as "verifyKey")
+func ValidateToken(t string) (models.Claim, error) {
+
+	token, err := jwt.ParseWithClaims(t, &models.Claim{}, verifyFunction)
+	if err != nil {
+		return models.Claim{}, err
+	}
+
+	// Check if the token is valid
+	if !token.Valid {
+		return models.Claim{}, errors.New("Invalid token")
+	}
+
+	// Obtain the claims from the token
+	claim, ok := token.Claims.(*models.Claim)
+	if !ok {
+		return models.Claim{}, errors.New("Couldn't fetch the claims")
+	}
+
+	return *claim, nil
+}
+
+// Returns the verifyKey wich is out public key already parsed
+func verifyFunction(t *jwt.Token) (interface{}, error) {
+	return verifyKey, nil
 }
