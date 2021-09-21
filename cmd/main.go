@@ -9,7 +9,7 @@ import (
 
 func main() {
 	// Parse the certificates/keys
-	err := auth.LoadCertificates("./../certificates/app.rsa", "./../certificates/app.rsa.pub")
+	err := auth.LoadCertificates("certificates/app.rsa", "certificates/app.rsa.pub")
 	if err != nil {
 		log.Fatalf("Could not load the certificates/keys. Error: %v", err)
 	}
