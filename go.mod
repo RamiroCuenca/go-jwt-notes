@@ -9,6 +9,7 @@ require (
 )
 
 require (
+	github.com/golang-jwt/jwt/v4 v4.0.0 // indirect
 	go.uber.org/atomic v1.9.0 // indirect
 	go.uber.org/multierr v1.7.0 // indirect
 )
