@@ -3,8 +3,8 @@ package main
 import (
 	"log"
 
-	"github.com/RamiroCuenca/go-rest-notesApi/auth"
-	"github.com/RamiroCuenca/go-rest-notesApi/common/logger"
+	"github.com/RamiroCuenca/go-jwt-notes/auth"
+	"github.com/RamiroCuenca/go-jwt-notes/common/logger"
 )
 
 func main() {

@@ -7,10 +7,10 @@ import (
 	"net/http"
 	"strconv"
 
-	"github.com/RamiroCuenca/go-rest-notesApi/common/handler"
-	"github.com/RamiroCuenca/go-rest-notesApi/common/logger"
-	"github.com/RamiroCuenca/go-rest-notesApi/database/connection"
-	"github.com/RamiroCuenca/go-rest-notesApi/notes/models"
+	"github.com/RamiroCuenca/go-jwt-notes/common/handler"
+	"github.com/RamiroCuenca/go-jwt-notes/common/logger"
+	"github.com/RamiroCuenca/go-jwt-notes/database/connection"
+	"github.com/RamiroCuenca/go-jwt-notes/notes/models"
 	"github.com/lib/pq"
 )
 

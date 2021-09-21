@@ -3,8 +3,8 @@ package main
 import (
 	"net/http"
 
-	"github.com/RamiroCuenca/go-rest-notesApi/auth"
-	"github.com/RamiroCuenca/go-rest-notesApi/common/handler"
+	"github.com/RamiroCuenca/go-jwt-notes/auth"
+	"github.com/RamiroCuenca/go-jwt-notes/common/handler"
 )
 
 // I'm sure that there are some provided by the community

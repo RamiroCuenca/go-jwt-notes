@@ -4,7 +4,7 @@ import (
 	"errors"
 	"time"
 
-	"github.com/RamiroCuenca/go-rest-notesApi/users/models"
+	"github.com/RamiroCuenca/go-jwt-notes/users/models"
 	"github.com/golang-jwt/jwt/v4"
 )
 

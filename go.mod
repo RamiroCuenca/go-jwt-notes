@@ -1,4 +1,4 @@
-module github.com/RamiroCuenca/go-rest-notesApi
+module github.com/RamiroCuenca/go-jwt-notes
 
 go 1.17
 

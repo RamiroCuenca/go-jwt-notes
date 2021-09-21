@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/RamiroCuenca/go-rest-notesApi/common/logger"
+	"github.com/RamiroCuenca/go-jwt-notes/common/logger"
 	_ "github.com/lib/pq" // Dont forget to import it, it provides the drivers for postgres
 )
 

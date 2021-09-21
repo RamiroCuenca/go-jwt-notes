@@ -5,10 +5,10 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/RamiroCuenca/go-rest-notesApi/auth"
-	"github.com/RamiroCuenca/go-rest-notesApi/common/handler"
-	"github.com/RamiroCuenca/go-rest-notesApi/common/logger"
-	"github.com/RamiroCuenca/go-rest-notesApi/users/models"
+	"github.com/RamiroCuenca/go-jwt-notes/auth"
+	"github.com/RamiroCuenca/go-jwt-notes/common/handler"
+	"github.com/RamiroCuenca/go-jwt-notes/common/logger"
+	"github.com/RamiroCuenca/go-jwt-notes/users/models"
 )
 
 // The idea is that users controllers manages the login and the signup of any user

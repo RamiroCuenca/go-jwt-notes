@@ -4,7 +4,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/RamiroCuenca/go-rest-notesApi/common/logger"
+	"github.com/RamiroCuenca/go-jwt-notes/common/logger"
 	"github.com/go-chi/chi"
 )
 
